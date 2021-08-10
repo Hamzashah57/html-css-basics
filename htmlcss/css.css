@@ -1,0 +1,213 @@
+body{
+font:15px/1.5 arial, helvetica, sans serif;
+padding:0;
+margin:0;
+background-color: black;
+color: white;
+}
+/*globol*/
+.container{
+
+width:80%;
+margin: auto;
+overflow: hidden;
+}
+
+ul{
+margin:0;
+padding: 0;
+}
+.button_1{
+height:21px;
+border: 0;
+background: red;
+padding: 0 20px 0 20px;
+color: white;
+}
+
+/*header*/
+
+header{
+background:black;
+color: white;
+padding-top:30px;
+min-height:70px;
+border-bottom: orange 3px solid;
+}
+
+header a{
+color:whitesmoke;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 16px;
+}
+
+
+header li{
+float: left;
+display: inline;
+padding: 0 20px 0 20px;
+}
+
+header #branding{
+float: left;
+}
+header #branding h1{
+margin: 0;
+}
+
+header nav{
+float: right;
+margin-top:15px;
+}
+
+header .highlight, header .current a{
+color: orange;
+font-weight: bold;
+}
+
+header a:hover{
+color: red;
+font-weight: bold;
+}
+ 
+/* showcase */
+
+#showcase{
+min-height:30%;
+background: url('showcase.png')  0 -400px;
+color: whitesmoke;
+text-decoration: bold;
+}
+
+#showcase h1{
+color: orange;
+margin-top: 100px;
+font-size: 50px;
+margin-bottom: 10px;
+
+}
+
+#showcase p{
+font-size: 16px;
+}
+
+#newsletter{
+border-top: orange 3px solid;
+background:black;
+color: white;
+}
+
+#services h1{
+color: orange;
+}
+
+/* newsletter  */
+#newsletter  h1{
+float: left;
+
+}
+
+#newsletter form{
+float: right;
+margin-top: 23px;
+
+}
+
+#newsletter input(type="email"){
+padding: 4px;
+height: 25px;
+width:250px;
+}
+
+/* boxes */
+
+#boxes{
+margin-top: 20px;
+border-top: 3px orange solid;
+}
+
+#boxes .box{
+text-align: center;
+float: left;
+width: 30%;
+padding: 10px;
+}
+
+#boxes .box img{
+width: 120px;
+}
+/* sidebar */
+
+aside#sidebar{
+float: right;
+width: 30%;
+margin-top: 10px;
+}
+
+
+aside#sidebar .order textarea{
+width: 90%;
+padding: 5px;
+}
+
+
+
+/* main-col */
+
+article#main-col{
+float: left;
+width: 65%;
+}
+
+/* services */
+
+ul#services li{
+list-style: none;
+padding: 20px;
+margin-bottom: 5px;
+}
+
+
+
+footer{
+padding: 20px;
+margin-top: 20px;
+text-align: center;
+
+}
+
+/* media Queries */
+@media(max-width: 768px){
+header #branding,
+header nav,
+header nav li,
+#newsletter h1,
+#newsletter form,
+#boxes .box,
+article#main-col,
+aside#sidebar{
+float: none;
+text-align: center;
+width: 100%;
+
+}
+header{
+padding-bottom: 20px;
+}
+
+#showcase h1{
+margin-top: 40;
+}
+
+#newsletter button, .order button{
+display: block;
+width: 100%;
+}
+
+#newsletter form input(type: "email"), .order input, .order textarea{
+width: 100%;
+margin-bottom: 5px;
+}
+
+}
